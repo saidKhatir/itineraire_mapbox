@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Webmap Navigation</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div id="map"></div>
+<div class="control-panel">
+    <select id="locations"></select>
+    <select id="mode">
+        <option value="driving">Driving</option>
+        <option value="walking">Walking</option>
+        <option value="cycling">Cycling</option>
+    </select>
+    <button id="getRoute">Get Route</button>
+    <div id="route-info">
+        <p><strong>Distance:</strong> <span id="route-distance">N/A</span></p>
+        <p><strong>Duration:</strong> <span id="route-duration">N/A</span></p>
+    </div>
+</div>
+
+    <!-- Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet">
+
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+    <!-- Add your JavaScript file -->
+    <script type="module" src="./main.js"></script>
+    <script src="style.css"></script>
+    
+</body>
+</html>
